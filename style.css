@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Display";
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  .app{
+    margin: 30px;
+  }
+
+  .info{
+    width: 450px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 15px;
+  }
+
+  .main-pic{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .info-h1{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 28px;
+        color:  hsl(223, 47%, 23%);
+        margin: 30px 50px;     
+  }
+
+  .info-para{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 30px 50px;
+    color: hsl(224, 23%, 55%);
+   
+  }
+
+  .plan{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    align-items: center;
+    border-radius: 10px;
+    background-color:hsl(224, 52%, 96%); 
+    padding: 10px;
+    width: 80%;
+  }
+
+  .price{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .price-h2{
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
+    color:  hsl(223, 47%, 23%);
+  }
+
+  .price-para{
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 28px;
+    color: hsl(224, 23%, 55%);
+  }
+
+  .plan-a{
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
+    color:  hsl(245, 75%, 52%);
+    margin-left: 90px;
+    cursor: pointer;
+  }
+
+  .plan-a:hover{
+    text-decoration: none;
+    color: hsl(215, 51%, 70%);
+  }
+
+  .button{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .info-btn{
+    height: 50px;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    font-style: normal;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .info-btn:hover{
+    background-color: hsl(215, 51%, 70%);
+  }
+
+  .cancel-btn{
+    border: none;
+    margin: 30px auto;
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 28px;
+    background-color: hsl(225, 100%, 98%);
+  }
+
+  .cancel-btn:hover{
+    color:hsl(223, 47%, 23%) ;
+  }
+
+  .foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color:hsl(223, 47%, 23%);
+    margin: 50px 20px;
+  }
+
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+  }
+
+  @media screen and (max-width: 375px) {
+    body{
+      background:url(./images/pattern-background-mobile.svg);
+      background-repeat: no-repeat; 
+    }
+  }
+
+  @media screen and (max-width:490px) {
+    
+  body{
+    justify-content: start;
+  }
+
+    .info{
+      max-width: 90%;
+    }
+
+   .info-para{
+    margin: 30px 70px;
+   }
+
+   .foot{
+    width: 60%;
+   }
+  }
